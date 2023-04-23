@@ -1,0 +1,59 @@
+.boats_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.boat_card {
+    border: .5px solid #1a69536b;
+    box-shadow: 5px 5px 5px rgb(179, 179, 179);
+    width: 250px;
+    color:#7f8285;
+    background-color: #f5f5f5;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1%;
+}
+
+.boat_card:hover {
+    border: .5px solid rgba(166, 194, 186, 0.42);
+    box-shadow: 5px 5px 5px rgba(179, 179, 179, 0.6);
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+.boat_img {
+    width: 95%;
+    border-radius: 9px;
+    margin-top: 2%;
+}
+
+.boat_name {
+    color:#3a5758;
+    font-size: large;
+    font-weight: bold;
+}
+
+.boat_info {
+    text-align: center;
+}
+
+.add_cart_button {
+    border-radius: 15px;
+    border: none;
+    color: #ffffff;
+    background-color: #e7654e;
+    padding: 10px 20px;
+    margin: 10px;
+
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.boat_card:hover .add_cart_button {
+    background-color: #c04b37;
+    cursor: pointer;
+}

@@ -1,0 +1,26 @@
+@import 'style/normalize.css';
+@import 'style/app';
+@import 'style/var';
+@import 'style/default';
+@import 'style/footer';
+@import 'style/header';
+@import 'style/modal';
+@import 'style/pages/home';
+@import 'style/pages/rental';
+@import 'style/pages/courses';
+@import 'style/pages/trip';
+
+@font-face {
+  font-family: Dancing;
+  src: url('./assets/fonts/DancingScript-Regular.ttf');
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url('./assets/fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: Raleway-varible;
+  src: url('./assets/fonts/Raleway.ttf');
+}

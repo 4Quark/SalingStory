@@ -1,0 +1,20 @@
+.home_options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home_options_item img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: $border;
+    border-radius: 50%;
+}
+
+.home_options_item:hover{
+    transform: scale(1.1);
+    transition: transform ease-in-out 0.3s;
+    font-size: 110%;
+}

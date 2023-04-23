@@ -1,0 +1,59 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.logo {
+  position: relative;
+  font-family: Raleway;
+}
+
+.logo_em {
+  color: $accent;
+  position: absolute;
+  left: 95px;
+  bottom: 10px;
+  font-family: Dancing;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.nav_link {
+  position: relative;
+  color: $navLink;
+}
+
+.nav_link.active {
+  font-weight: 600;
+}
+
+.nav_link.active::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: $navLink;
+}
+
+.nav_link:hover {
+    color: $accent;
+}
+
+.nav_link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: $accent;
+}
