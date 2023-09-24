@@ -1,28 +1,22 @@
 header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgba(128, 128, 128, 0.2);
+  background-color: $background-header;
+  z-index: 5;
+} 
+
+.logo_img {
+  width: 180px;
 }
 
-.logo {
-  position: relative;
-  font-family: Raleway;
-}
-
-.logo_em {
-  color: $accent;
-  position: absolute;
-  left: 95px;
-  bottom: 10px;
-  font-family: Dancing;
-}
-
-.navigation {
+.nav {
   display: flex;
   gap: 20px;
   font-size: 20px;
+  position: relative;
 }
 
 .nav_link {
@@ -56,4 +50,24 @@ header {
   width: 100%;
   height: 1px;
   background-color: $accent;
+}
+
+.burger {
+  display: none;
+}
+
+.nav_hidden {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: $background;
+  padding: 20px;
+  font-size: 16px;
+  z-index: 5;
+}
+
+.nav_show:hover .nav_hidden {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

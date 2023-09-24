@@ -1,4 +1,3 @@
-import { Link } from '../../node_modules/react-router-dom/dist/index';
 import sailBoat from '../assets/before_footer.png';
 import telegram from '../assets/social/telegramm.svg';
 import instagram from '../assets/social/instagram.svg';
@@ -10,26 +9,12 @@ import phone from '../assets/social/phone.png';
 
 const Footer = () => {
   return (
-    <div className="footer_container">
+    <footer className="footer_container">
       <div className="footer_before">
         <img className="footer_before_img" src={sailBoat} alt="sail boat draw" />
         <div className="footer_before_lane"></div>
       </div>
       <div className="footer_info">
-        <div className="footer_nav">
-          <Link className="footer_link" to="/courses">
-            Курсы и обучение
-          </Link>
-          <Link className="footer_link" to="/rental">
-            Аренда яхты
-          </Link>
-          <Link className="footer_link" to="/trip">
-            Экскурсии и прогулки
-          </Link>
-          <Link className="footer_link" to="/blog">
-            Блог
-          </Link>
-        </div>
         <div className="footer_contacts">
           <ul className="contacts_list">
             <li className="contacts_list_item">
@@ -78,7 +63,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer_disclamer">by 4Quark</div>
-    </div>
+    </footer>
   );
 };
 

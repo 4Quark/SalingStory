@@ -3,7 +3,10 @@ const NotFound = () => {
     <div>
       <h2>Oops!</h2>
       <h3>404</h3>
-      <p>Sorry! This page was not found</p>
+      <p>
+        Похоже геннакер намотался <em>404</em> раза
+      </p>
+      <p>Такой страницы не существует</p>
     </div>
   );
 };

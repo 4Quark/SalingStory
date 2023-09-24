@@ -1,0 +1,67 @@
+.FAQ, .FAQ_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.answer {
+    float: left;
+    max-width: 50%;
+    background: $answer;
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    position: relative;
+    line-height: 1.5em;
+}
+
+.answer::after, .answer::before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    bottom: .5em;
+    width: 1.8em;
+    height: 1.8em;
+    border: .5em solid $background;
+    border-radius: 50%;
+    background: $background;
+}
+
+.answer::before {
+    border-top: none;
+    height: .9em;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    background: $answer;
+    border-color: $answer;
+    margin-left: -.9em;
+}
+
+.question {
+    background-color: $question;
+    float: right;
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    position: relative;
+    line-height: 1.5em;
+}
+
+.question::after, .question::before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: .5em;
+    width: 1.8em;
+    height: 1.8em;
+    border: .5em solid $background;
+    border-radius: 50%;
+    background: $background;
+}
+
+.question::before {
+    border-top: none;
+    height: .9em;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    background: $question;
+    border-color: $question;
+    margin-right: -.9em;
+}

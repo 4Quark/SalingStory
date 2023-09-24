@@ -1,9 +1,3 @@
-import { Link } from '../../node_modules/react-router-dom/dist/index';
-import promo1 from '../assets/promo/promo1.png';
-import promo2 from '../assets/promo/promo2.png';
-import promo3 from '../assets/promo/promo3.png';
-import promo4 from '../assets/promo/promo4.png';
-
 const Homepage = () => {
   return (
     <div className="home_container">
@@ -24,7 +18,7 @@ const Homepage = () => {
           сделать все возможное, чтобы сделать ваше путешествие настоящим сюрпризом и неповторимым впечатлением в вашей жизни.
         </p>
       </section>
-      <section className="home_options">
+      {/* <section className="home_options">
         <Link className="home_options_item" to="/courses">
           <img src={promo1} alt="promo image" />
           Курсы и обучение
@@ -41,7 +35,7 @@ const Homepage = () => {
           <img src={promo4} alt="promo image" />
           Блог
         </Link>
-      </section>
+      </section> */}
       <section className="home_info">
         <p>
           Если вам интересны приключенческие рейсы на парусных яхтах, то наш сайт посвящен сэйлингу и поможет вам организовать
@@ -51,16 +45,6 @@ const Homepage = () => {
           пейзажи и отдохнете от повседневной суеты. Не упустите возможность отправиться в увлекательное путешествие на яхте с
           нашим сайтом по сэйлингу!
         </p>
-      </section>
-      <section className="home_feedback">
-        <h3>Отзывы</h3>
-      </section>
-      <section className="home_contacts">
-        <h3>Контакты</h3>
-        <div className="home_contacts_item">Telegram</div>
-        <div className="home_contacts_item">YouTube</div>
-        <div className="home_contacts_item">Instagram</div>
-        <div className="home_contacts_item">e-mail</div>
       </section>
     </div>
   );

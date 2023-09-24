@@ -1,0 +1,153 @@
+.promo {
+    height: calc(100vh - 100px);
+
+    .promo_text {
+        position: absolute;
+        top: 200px;
+        z-index: 1;
+        margin: 0 auto;
+        width: 100%;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+
+        h2 {
+            font-size: 48px;
+        }
+
+        h3, div {
+            font-size: 30px;
+        }
+    }
+}
+
+.video_container {
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    z-index: 0;
+
+    video {
+        min-width: 100%;
+    }
+}
+
+.motivation {
+    font-size: 30px;
+    padding: 160px;
+}
+
+.event_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.event {
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+    margin-bottom: 30px;
+    font-weight: 500;
+
+    .event_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        padding: 15px;
+        height: calc(100% - 30px);
+    }
+
+    .event_main {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    h3 {
+        color: $main_color;
+        font-weight: 600;
+    }
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 150%;
+        z-index: 0;
+    }
+    a {
+        color: $navLink;
+    }
+    a:hover {
+        color: $accent;
+    }
+    .event_link {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        top: 0;
+        z-index: 2;
+    }
+}
+
+.event:hover img {
+    transform: scale(1.1);
+    transition: transform ease-in-out 0.5s;
+}
+
+.race_programm {
+    text-align: left;
+    h3 {
+        font-size: 36px;
+        text-align: center;
+    }
+    .race_programm_item {
+        position: relative;
+        height: 50px;
+        width: 100%;
+    }
+    .circle {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: 30%;
+        background-color: transparent;
+        border: 2px solid rgb(255, 251, 0);
+        border-radius: 50%;
+    }
+    .race_programm_date {
+        position: absolute;
+        top: -10px;
+        right: 20px;
+        white-space: nowrap;
+        font-size: 20px;
+        font-weight: 500;
+        color: $accent;
+        padding-right: 10px;
+    }
+    .race_programm_schedule {
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        white-space: nowrap;
+        font-size: 20px;
+        padding-left: 10px;
+    }
+}
+
+.race_pictires {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    overflow: scroll;
+
+    .race_pictire {
+        height: 400px;
+    }
+}
